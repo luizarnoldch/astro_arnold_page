@@ -6,7 +6,6 @@
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "types": ["node"]
   },
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
