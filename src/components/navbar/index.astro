@@ -1,0 +1,17 @@
+---
+import Logo from "@/assets/Logo.astro";
+import { Button } from "@/components/ui/button";
+import Burguer from "./Burguer";
+import Navigation from "./Navigation.astro";
+---
+
+<section
+  class="h-16 md:h-18 w-full flex justify-between px-5 items-center fixed z-[999] bg-white"
+>
+  <Logo />
+  <Navigation />
+  <div class="h-full flex justify-center items-center gap-2">
+    <Button size="lg"> Contact</Button>
+    <Burguer client:load />
+  </div>
+</section>

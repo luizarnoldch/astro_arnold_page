@@ -1,0 +1,21 @@
+---
+const navItems = [
+  { name: "Home", href: "/" },
+  { name: "Features", href: "/#features" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Blog", href: "/#blog" },
+];
+---
+
+<nav class="md:block hidden">
+  <ul class="flex gap-4">
+    {
+      navItems.map((item) => (
+        <li>
+          <a href={item.href}>{item.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
