@@ -1,1 +1,103 @@
-<section>Footer</section>
+---
+import Logo from "@/assets/Logo.astro";
+import { Button } from "./ui/button";
+---
+
+<footer class="py-8">
+  <div class="container mx-auto px-4">
+    <!-- Top Section: Logo & Newsletter -->
+    <div
+      class="flex flex-col md:flex-row md:justify-between items-center border-b border-gray-700 pb-8 mb-8"
+    >
+      <!-- Logo -->
+      <div class="mb-4 md:mb-0">
+        <a href="#">
+          <Logo />
+        </a>
+      </div>
+      <!-- Newsletter Signup -->
+      <div class="w-full md:w-1/2">
+        <p class="mb-2 text-center md:text-right">
+          Subscribe to our newsletter for the latest updates on features and
+          releases.
+        </p>
+        <form
+          action="#"
+          method="post"
+          class="flex flex-col sm:flex-row justify-center md:justify-end gap-2 py-8"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email here"
+            required
+            class="w-full sm:w-auto px-4 py-2 rounded-md text-gray-800 focus:outline-none border border-black"
+          />
+          <Button
+            type="submit"
+            class="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 rounded-md"
+            size="lg"
+          >
+            Join
+          </Button>
+        </form>
+        <p class="mt-2 text-center md:text-right text-sm">
+          By subscribing, you consent to our
+          <a href="#" class="underline hover:text-gray-300">Privacy Policy</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Middle Section: Links -->
+    <div class="flex flex-row sm:flex-row justify-between mb-8">
+      <!-- Resources -->
+      <!-- <div class="mb-4 sm:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Resources</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Blog Posts</a></li>
+          <li><a href="#" class="hover:underline">Case Studies</a></li>
+          <li><a href="#" class="hover:underline">Webinars</a></li>
+          <li><a href="#" class="hover:underline">FAQs</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div> -->
+      <!-- Company Info -->
+      <!-- <div class="mb-4 sm:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Company Info</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Press Kit</a></li>
+          <li><a href="#" class="hover:underline">Investors</a></li>
+          <li><a href="#" class="hover:underline">Partners</a></li>
+        </ul>
+      </div> -->
+      <!-- Connect With Us -->
+      <div class="w-full flex flex-col md:flex-row gap-8 justify-center">
+        <h3 class="text-lg font-semibold">Connect With Us</h3>
+        <ul class="flex gap-4">
+          <li class="h-full flex justify-center items-center"><a href="#" class="hover:underline">Facebook</a></li>
+          <li class="h-full flex justify-center items-center"><a href="#" class="hover:underline">Instagram</a></li>
+          <li class="h-full flex justify-center items-center"><a href="#" class="hover:underline">X</a></li>
+          <li class="h-full flex justify-center items-center"><a href="#" class="hover:underline">LinkedIn</a></li>
+          <li class="h-full flex justify-center items-center"><a href="#" class="hover:underline">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Copyright & Legal -->
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center border-t border-gray-700 pt-4"
+    >
+      <p class="text-sm">&copy; 2025 Resume. All rights reserved.</p>
+      <ul class="flex space-x-4 mt-2 sm:mt-0">
+        <li><a href="#" class="text-sm hover:underline">Privacy Policy</a></li>
+        <li>
+          <a href="#" class="text-sm hover:underline">Terms of Service</a>
+        </li>
+        <li><a href="#" class="text-sm hover:underline">Cookie Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
